@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Her - SOS Alert</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #ffffff;">
+    <div class="container">
+        <h1>Safe Her - SOS Alert</h1>
+
+        <!-- Form to add a new emergency contact -->
+        <div class="form-container">
+            <h2>Add Emergency Contact</h2>
+            <form id="contactForm" action="add_contact.php" method="POST">
+                <input type="text" name="name" placeholder="Contact Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="phone" placeholder="Phone Number" required>
+                <button type="submit">Add Contact</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <p>Press the button below to send an SOS message with your location to your emergency contacts.</p>
+        <button id="sosButton">Send SOS Alert</button>
+        <p id="status"></p>
+    </div>
+
+    <script src="sos.js"></script>
+</body>
+</html>
